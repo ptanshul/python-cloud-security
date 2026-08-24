@@ -10,3 +10,6 @@ print(f"VM Location: {vm['location']}")
 print(f"VM Status: {vm['status']}")
 print(f"VM Public IP: {vm['public_ip']}")
 print(f"VM Port: {vm['port']}")
+
+if vm["public_ip"] == True:
+    print("Security Alert !! VM is accessible from the internet.")
