@@ -13,3 +13,6 @@ print(f"VM Port: {vm['port']}")
 
 if vm["public_ip"] == True:
     print("Security Alert !! VM is accessible from the internet.")
+
+if vm["port"] == 22:
+    print("Security Alert !! SSH port is open to the internet.")
