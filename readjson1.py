@@ -3,4 +3,5 @@ import json
 with open("Audit.json", "r") as file:
     data = json.load(file)
 
-print(data)
+for event in data:
+    print(event["category"])
