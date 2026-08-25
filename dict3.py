@@ -1,8 +1,20 @@
-user = {
-    "name": "alice",
-    "role": "Reader"
-}
+assignments = [
+    {
+        "user": "alice",
+        "role": "Reader"
+    },
+    {
+        "user": "bob",
+        "role": "Contributor"
+    },
+    {
+        "user": "charlie",
+        "role": "Owner"
+    }
+]
 
-print(user["role"])
-if user["role"] == "Reader":
-    print("User has read-only access.")
+dangerous_roles = ["Owner", "User Access Administrator"]
+for assignment in assignments:
+    print(assignment)
+for assignment in assignments:
+    print(f"User: {assignment['user']}, Role: {assignment['role']}")
