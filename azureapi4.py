@@ -8,6 +8,7 @@ data = response.json()
 
 print(data)
 for todo in data:
-    print("User ID:", todo['userId'])
-    print("Title:", todo['title'])
-    print("Completed:", todo['completed'])
+    if not todo['completed']:
+        print("Incomplete task:")
+        print("User ID:", todo['userId'])
+        print("Title:", todo['title'])
