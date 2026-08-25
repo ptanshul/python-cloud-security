@@ -50,5 +50,8 @@ for resource in data["value"]:
     if resource["type"] == "Microsoft.Network/networkSecurityGroups":
         
         print("NSG Resource found:", resource["name"])
+for resource in data["value"]:
+    if resource["type"] == "Microsoft.Network/publicIPAddresses":
+        print("PublicIP Resource found:", resource["name"])
         
 
