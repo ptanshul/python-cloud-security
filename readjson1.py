@@ -3,5 +3,7 @@ import json
 with open("Audit.json", "r") as file:
     data = json.load(file)
 
-for key in data:
+event = data[0]
+
+for key in event:
     print(key)
