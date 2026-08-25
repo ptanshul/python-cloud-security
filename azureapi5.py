@@ -39,3 +39,5 @@ data = response.json()
 # print(type(data))
 for resource in data["value"]:
     print(resource["name"])
+if data["kbs-agentpool"] == "kbs-agentpool":
+    print("Found kbs-agentpool resource")
