@@ -10,5 +10,3 @@ print(data)
 print("User ID:", data['userId'])
 print("Title:", data['title'])
 print ("Completed:", data['completed'])
-
-print(data[0]["title"])  # This line will raise an error because 'data' is a dictionary, not a list.
