@@ -35,9 +35,16 @@ response = requests.get(
 # print("Status:", response.status_code)
 
 data = response.json()
-
+rfound = False
 # print(type(data))
 for resource in data["value"]:
     print(resource["name"])
-if data["kbs-agentpool"] == "kbs-agentpool":
-    print("Found kbs-agentpool resource")
+    if resource["name"] == "vm-aks-nsg":
+        rfound = True
+        print("Resource found:", resource["name"])
+        print("Resource ID:", resource["id"])
+        print("Resource Type:", resource["type"])
+        print("Resource Location:", resource["location"])
+        break
+        
+
