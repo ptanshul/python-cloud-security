@@ -14,5 +14,18 @@ vm = {
         }
     }
 }
+
+
+vm1 = {
+    "name": "prod-web-01",
+    "network": {
+        "publicAccess": {
+            "enabled": True,
+            "ip": "20.10.10.10"
+        }
+    }
+}
 print(identity["properties"]["type"])
 print(vm["properties"]["hardwareProfile"]["vmSize"])
+
+print(vm1["network"]["publicAccess"]["enabled"])
