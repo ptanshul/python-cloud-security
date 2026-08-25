@@ -4,3 +4,5 @@ user = {
 }
 
 print(user["role"])
+if user["role"] == "Reader":
+    print("User has read-only access.")
