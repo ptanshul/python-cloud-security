@@ -1,5 +1,5 @@
 from azure.identity import AzureCliCredential
-from azure.mgmt.resource import SubscriptionClient
+from azure.mgmt.resource.subscriptions import SubscriptionClient
 
 credential = AzureCliCredential()
 
