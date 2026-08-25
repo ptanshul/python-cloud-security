@@ -7,6 +7,7 @@ response = requests.get(url)
 data = response.json()
 
 print(data)
-print("User ID:", data[0]['userId'])
-print("Title:", data[0]['title'])
-print("Completed:", data[0]['completed'])
+for todo in data:
+    print("User ID:", todo['userId'])
+    print("Title:", todo['title'])
+    print("Completed:", todo['completed'])
