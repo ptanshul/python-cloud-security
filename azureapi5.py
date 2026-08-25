@@ -46,5 +46,9 @@ for resource in data["value"]:
         print("Resource Type:", resource["type"])
         print("Resource Location:", resource["location"])
         break
+for resource in data["value"]:
+    if resource["type"] == "Microsoft.Network/networkSecurityGroups":
+        
+        print("NSG Resource found:", resource["name"])
         
 
