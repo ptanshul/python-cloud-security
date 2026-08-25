@@ -37,3 +37,5 @@ response = requests.get(
 data = response.json()
 
 # print(type(data))
+for resource in data["value"]:
+    print(resource["name"])
