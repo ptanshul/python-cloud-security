@@ -3,6 +3,7 @@ def my_decorator(func):
         print("Before the function runs")
         func()
         print("After the function runs")
+        print("This is the end print statement after decorator.")
     return wrapper
 
 
