@@ -9,6 +9,7 @@ def my_decorator(func):
 @my_decorator
 def say_hello():
     print("Hello!")
+    print("This is the decorated function.")
 
 
 say_hello()
