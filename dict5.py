@@ -21,6 +21,7 @@ assignments = [
         }
     }
 ]
+#testining
 for assignment in assignments:
     print(assignment["properties"]["role"])
     
